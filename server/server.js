@@ -79,10 +79,6 @@ app.use(function (err, req, res, next) {
   });
 });
 
-http.createServer(app)
-  .listen(port, () => {
-    console.log(`Listening on ${config.baseURL}`);
-  });
-
+module.exports = app;
 
   
