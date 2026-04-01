@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/login",
-      "destination": "/api/server"
+      "destination": "/api/server.cjs"
     },
     {
       "source": "/((?!api|assets|favicon).*)",
