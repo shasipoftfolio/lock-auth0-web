@@ -11,7 +11,7 @@
   "rewrites": [
     {
       "source": "/login",
-      "destination": "/api/server.cjs"
+      "destination": "/api/server"
     },
     {
       "source": "/((?!api|assets|favicon).*)",
