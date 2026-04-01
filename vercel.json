@@ -3,6 +3,11 @@
   "installCommand": "npm install && cd server && npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+    "functions": {
+    "api/server.js": {
+      "includeFiles": "server/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/login",
