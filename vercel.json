@@ -1,12 +1,16 @@
 {
-  "experimentalServices": {
-    "frontend": {
-      "entrypoint": "src/",
-      "routePrefix": "/"
+  "version": 2,
+  "installCommand": "npm install && cd server && npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/login",
+      "destination": "/api/server"
     },
-    "backend": {
-      "entrypoint": "server/",
-      "routePrefix": "/login"
+    {
+      "source": "/((?!api|assets|favicon).*)",
+      "destination": "/index.html"
     }
-  }
+  ]
 }
